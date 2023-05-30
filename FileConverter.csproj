@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>_db290ae3-2f8c-4c34-a35c-168134bf5aad.ico</ApplicationIcon>
+    <AssemblyName>File Converter</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="_db290ae3-2f8c-4c34-a35c-168134bf5aad.ico" />
+	  <Content Include="ffmpeg\**">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ookii.Dialogs.Wpf" Version="5.0.1" />
+    <PackageReference Include="xFFmpeg.NET" Version="7.1.3" />
+  </ItemGroup>
+
+</Project>
